@@ -6,7 +6,7 @@
   <link href="https://blog.nameidi.top/atom.xml" rel="self"/>
   
   <link href="https://blog.nameidi.top/"/>
-  <updated>2021-05-19T01:32:06.829Z</updated>
+  <updated>2021-05-19T02:04:09.004Z</updated>
   <id>https://blog.nameidi.top/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Git submodule备份博客提交记录</title>
+    <link href="https://blog.nameidi.top/posts/dfc7266c.html"/>
+    <id>https://blog.nameidi.top/posts/dfc7266c.html</id>
+    <published>2021-05-19T01:59:04.000Z</published>
+    <updated>2021-05-19T02:04:09.004Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note default"><p>当博客和博客发布都在git上时使用Git submodule备份博客提交记录</p></div><span id="more"></span><h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><p>博客的备份和发布都使用git管理</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ol><li>移除目录中的 <code>.deploy_git</code></li><li>运行 <code>git submodule add &lt;博客发布git仓库&gt; .deploy_git</code></li><li>提交 <code>commit</code></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;当博客和博客发布都在git上时使用Git submodule备份博客提交记录&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.nameidi.top/categories/Hexo/"/>
+    
+    <category term="Next" scheme="https://blog.nameidi.top/categories/Hexo/Next/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.nameidi.top/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://blog.nameidi.top/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Git submodule添加Next</title>
+    <link href="https://blog.nameidi.top/posts/5e7b5822.html"/>
+    <id>https://blog.nameidi.top/posts/5e7b5822.html</id>
+    <published>2021-05-19T01:43:39.000Z</published>
+    <updated>2021-05-19T01:59:11.681Z</updated>
+    
+    <content type="html"><![CDATA[<div class="note default"><p>Git中submodule的使用</p></div><span id="more"></span><h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><ul><li>使用git clone安装主题，无法将<code>theme/next</code>提交到git上<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2></li></ul><ol><li>删除博客目录下原有的Next</li><li>执行下面的代码 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule add https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></li><li>在提交commit后会在仓库中显示出子模块文件夹，并带上其所在仓库的版本号。<h2 id="更新Next"><a href="#更新Next" class="headerlink" title="更新Next"></a>更新Next</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git submodule update</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;Git中submodule的使用&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.nameidi.top/categories/Hexo/"/>
+    
+    <category term="Next" scheme="https://blog.nameidi.top/categories/Hexo/Next/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.nameidi.top/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://blog.nameidi.top/tags/Next/"/>
+    
+  </entry>
   
   <entry>
     <title>企业微信智慧设备设备签名计算</title>
@@ -857,7 +909,7 @@
     <published>2020-04-04T12:15:50.000Z</published>
     <updated>2020-04-04T12:15:50.000Z</updated>
     
-    <content type="html"><![CDATA[<p>文采不好，如有写错的地方请纠正和批评</p><span id="more"></span><p>就在人们忙着迎接新年的时候，疫情爆发了，无数医护工作者在钟老的带领下不顾生命安危奋斗在疫情的前线，还有那些疫情期间奋斗在一线的官兵和工人们，非常值得我们尊敬，平时网上可能会有一些不同的声音，但在大是大非面前中国人民非常团结。</p><p>今天 2020 年 4 月 4 日也是清明节，大家一定要牢记今天，国务院决定举行全国性哀悼活动。</p><p>今天 10 时起，我希望大家都能停下手上的事情，哪怕是走路也请停下，一起为抗击疫情牺牲的烈士和逝世的同胞们默哀 3 分钟，如果没有他们的付出也就不会有我们现在安稳的生活。</p><p>愿逝者安息，愿生者奋发，愿祖国昌盛。<br><img src="https://public.nameidi.top:7443/image/20200404/vohkB4mQBfgj.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>文采不好，如有写错的地方请纠正和批评</p><span id="more"></span><p>就在人们忙着迎接新年的时候，疫情爆发了，无数医护工作者在钟老的带领下不顾生命安危奋斗在疫情的前线，还有那些疫情期间奋斗在一线的官兵和工人们，非常值得我们尊敬，平时网上可能会有一些不同的声音，但在大是大非面前中国人民非常团结。</p><p>今天 2020 年 4 月 4 日也是清明节，大家一定要牢记今天，国务院决定举行全国性哀悼活动。</p><p>今天 10 时起，我希望大家都能停下手上的事情，哪怕是走路也请停下，一起为抗击疫情牺牲的烈士和逝世的同胞们默哀 3 分钟，如果没有他们的付出也就不会有我们现在安稳的生活。</p><p>愿逝者安息，愿生者奋发，愿祖国昌盛。<br><img data-src="https://public.nameidi.top:7443/image/20200404/vohkB4mQBfgj.jpg"></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;文采不好，如有写错的地方请纠正和批评&lt;/p&gt;</summary>
@@ -1407,7 +1459,7 @@
     <published>2019-09-26T19:51:48.000Z</published>
     <updated>2020-04-23T04:17:00.000Z</updated>
     
-    <content type="html"><![CDATA[<p>辅助来源于国外<a href="https://www.unknowncheats.me/forum/grand-theft-auto-v/">UnKnoWnCheaTs 论坛</a><br>原文地址：<a href="https://crazyzhang.cn/167.html">https://crazyzhang.cn/167.html</a></p><span id="more"></span><h3 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h3><p>“GTA5线上小助手”由CrazyZhang开发，使用完全免费！为了保证您的权益，请确认是在本站下载的小助手。</p><p>我只开发过仅此一款GTA5线上小助手，其它的类似软件都不是我开发的，我发布的所有辅助都是完全免费的，不存在任何收费行为，大家不要上当受骗</p><h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p><img src="https://public.nameidi.top:7443/image/20200202/f4srNYkrA8AL.png"><br><img src="https://public.nameidi.top:7443/image/20200202/ivaKbH88Q8wQ.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2>]]></content>
+    <content type="html"><![CDATA[<p>辅助来源于国外<a href="https://www.unknowncheats.me/forum/grand-theft-auto-v/">UnKnoWnCheaTs 论坛</a><br>原文地址：<a href="https://crazyzhang.cn/167.html">https://crazyzhang.cn/167.html</a></p><span id="more"></span><h3 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h3><p>“GTA5线上小助手”由CrazyZhang开发，使用完全免费！为了保证您的权益，请确认是在本站下载的小助手。</p><p>我只开发过仅此一款GTA5线上小助手，其它的类似软件都不是我开发的，我发布的所有辅助都是完全免费的，不存在任何收费行为，大家不要上当受骗</p><h2 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h2><p><img data-src="https://public.nameidi.top:7443/image/20200202/f4srNYkrA8AL.png"><br><img data-src="https://public.nameidi.top:7443/image/20200202/ivaKbH88Q8wQ.png"></p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2>]]></content>
     
     
     <summary type="html">&lt;p&gt;辅助来源于国外&lt;a href=&quot;https://www.unknowncheats.me/forum/grand-theft-auto-v/&quot;&gt;UnKnoWnCheaTs 论坛&lt;/a&gt;&lt;br&gt;原文地址：&lt;a href=&quot;https://crazyzhang.cn/167.html&quot;&gt;https://crazyzhang.cn/167.html&lt;/a&gt;&lt;/p&gt;</summary>
